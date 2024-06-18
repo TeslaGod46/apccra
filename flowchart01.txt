@@ -1,0 +1,65 @@
+flowchart TD
+    A[Recepción de Solicitud] --> B[Verificación de Información]
+    B --> C[Evaluación y Aprobación]
+    C --> D[Registro y Creación de Cuenta]
+    D --> E[Mensaje de Bienvenida]
+    E --> F[Seguimiento y Soporte Inicial]
+
+    subgraph A[Recepción de Solicitud]
+        A1[Interesado completa formulario]
+        A2[Recepción de solicitud y documentación]
+        A1 --> A2
+        A2 --> A3[Personal de Atención al Asociado / Personal Administrativo]
+    end
+
+    subgraph B[Verificación de Información]
+        B1[Comprobación de documentación]
+        B1a[DNI / LC / LE / Cédula de Identidad]
+        B1b[Constancia de CUIL / CUIT]
+        B1c[Copia de Contrato de Alquiler / Título de Propiedad]
+        B1d[Reglamento de Copropiedad]
+        B1e[Constancia de Domicilio real del Consorcio]
+        B1f[Copia del Acta de Asamblea del Consorcio]
+        B1 --> B2[Personal de Atención al Asociado / Personal Administrativo / Departamento de Verificación y Validación]
+        B2 --> B3[Base de datos de asociados potenciales]
+        B2 --> B4[Sistema de almacenamiento de documentos]
+        B2 --> B5[Sistema de validación de documentos]
+    end
+
+    subgraph C[Evaluación y Aprobación]
+        C1[Revisión de información verificada]
+        C2[Evaluación de cumplimiento de criterios]
+        C3[Aprobación o rechazo de la solicitud]
+        C4[Notificación al solicitante]
+        C1 --> C2
+        C2 --> C3
+        C3 --> C4
+        C4 --> C5[Consejo Directivo y/o Asamblea de Delegados]
+    end
+
+    subgraph D[Registro y Creación de Cuenta]
+        D1[Ingreso de información en el sistema]
+        D2[Generación de número de socio]
+        D3[Creación de cuenta en el portal de asociados]
+        D1 --> D2
+        D2 --> D3
+        D3 --> D4[Atención al Asociado / Administración de Asociados / Departamento de TI]
+    end
+
+    subgraph E[Mensaje de Bienvenida]
+        E1[Preparación de envío de bienvenida]
+        E2[Envío de bienvenida por correo electrónico]
+        E3[Activación de beneficios y acceso al portal]
+        E1 --> E2
+        E2 --> E3
+        E3 --> E4[Departamento de Atención al Asociado]
+    end
+
+    subgraph F[Seguimiento y Soporte Inicial]
+        F1[Reunión introductoria]
+        F2[Resolución de dudas iniciales]
+        F3[Recopilación de feedback]
+        F1 --> F2
+        F2 --> F3
+        F3 --> F4[Departamento de Atención al Asociado]
+    end
